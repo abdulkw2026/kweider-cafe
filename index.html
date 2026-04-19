@@ -367,6 +367,12 @@
             .modal-content { max-width: 95%; }
             .section-title { font-size: 20px; margin: 20px 0 15px 0; }
         }
+/* تعديل خاص لقسم المشروبات الساخنة فقط */
+        #hot .item-image {
+            object-fit: contain; /* إظهار الصورة كاملة دون قص */
+            padding: 25px;       /* إضافة مساحة حول الفنجان ليعطي مظهراً أنيقاً وصغيراً */
+            background-color: rgba(255, 255, 255, 0.02); /* خلفية خفيفة جداً لإبراز الفنجان */
+        }
     </style>
 </head>
 <body>
@@ -398,7 +404,7 @@
 <div class="container" id="main-menu">
     
     <div id="breakfast" class="menu-section">
-        <h2 class="section-title">🍳 الفطور الشامي Breakfast</h2>
+        <h2 class="section-title">🍳 قريباً ...فطور شامي... بداية راقية ليومك، بنكهات تدوم في الذاكرة . Shami breakfast… a refined start to your day, with flavours that stay with you.</h2>
         <div class="item-grid">
             <div class="item-card">
                 <span class="item-price">£0.00</span>
@@ -781,7 +787,7 @@
         <div class="item-grid">
             <div class="item-card">
                 <span class="item-price">£8.00</span>
-                <img src="images/madlouka.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Madlouka'">
+                <img src="imagesmadlouka.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Madlouka'">
                 <div class="item-details">
                     <div class="item-name-ar">مدلوقة بالقشطة</div>
                     <div class="item-name-en">Premium Cream Madlouka</div>
@@ -832,7 +838,7 @@
 
             <div class="item-card">
                 <span class="item-price">£7.00</span>
-                <img src="images/osmalieh.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Osmalieh'">
+                <img src="osmalieh.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Osmalieh'">
                 <div class="item-details">
                     <div class="item-name-ar">كنافة عثملية بالقشطة</div>
                     <div class="item-name-en">Premium Cream Osmalieh Kunafa</div>
@@ -866,7 +872,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00</span>
-                <img src="images/pistachio-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
+                <img src="imagespistachio-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
                 <div class="item-details">
                     <div class="item-name-ar">كنافة بصوص الفستق الفاخر</div>
                     <div class="item-name-en">Premium Pistachio Kunafa Spread</div>
@@ -883,7 +889,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00</span>
-                <img src="images/chocolate-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
+                <img src="imageschocolate-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
                 <div class="item-details">
                     <div class="item-name-ar">كنافة بالشوكولا الفاخرة</div>
                     <div class="item-name-en">Premium Chocolate Kunafa Spread</div>
@@ -900,7 +906,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00</span>
-                <img src="images/biscoff-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
+                <img src="imagesbiscoff-spread.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
                 <div class="item-details">
                     <div class="item-name-ar">كنافة بكريمة اللوتس</div>
                     <div class="item-name-en">Premium Biscoff Kunafa Spread</div>
@@ -917,7 +923,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00</span>
-                <img src="images/walnut-kunafa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
+                <img src="imageswalnut-kunafa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Kunafa'">
                 <div class="item-details">
                     <div class="item-name-ar">كنافة بالجوز</div>
                     <div class="item-name-en">Premium Walnut Kunafa</div>
@@ -956,7 +962,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.00 <small style="font-size: 12px; font-weight: 400;">(4 Pcs)</small></span>
-                <img src="images/mabrouma-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Mabrouma'">
+                <img src="mabrouma-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Mabrouma'">
                 <div class="item-details">
                     <div class="item-name-ar">مغشوشة (برمة بالقشطة)</div>
                     <div class="item-name-en">Premium Cream Mabrouma</div>
@@ -973,7 +979,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.00 <small style="font-size: 12px; font-weight: 400;">(4 Pcs)</small></span>
-                <img src="images/halawet-el-jibn.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Halawet+El+Jibn'">
+                <img src="imageshalawet-el-jibn.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Halawet+El+Jibn'">
                 <div class="item-details">
                     <div class="item-name-ar">حلاوة الجبن بالقشطة</div>
                     <div class="item-name-en">Premium Cream Halawet El Jibn</div>
@@ -990,7 +996,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/ghraybeh.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Ghraybeh'">
+                <img src="ghraybeh.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Ghraybeh'">
                 <div class="item-details">
                     <div class="item-name-ar">غريبة بالقشطة</div>
                     <div class="item-name-en">Premium Cream Ghraybeh</div>
@@ -1007,7 +1013,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/warbat.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Warbat'">
+                <img src="warbat.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Warbat'">
                 <div class="item-details">
                     <div class="item-name-ar">وربات بالقشطة</div>
                     <div class="item-name-en">Premium Cream Warbat</div>
@@ -1024,7 +1030,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/wardat.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Wardat'">
+                <img src="wardat.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Wardat'">
                 <div class="item-details">
                     <div class="item-name-ar">وردات بالقشطة</div>
                     <div class="item-name-en">Premium Cream Wardat</div>
@@ -1041,7 +1047,7 @@
 
             <div class="item-card">
                 <span class="item-price">£2.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/qatayef-walnut.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Qatayef'">
+                <img src="qatayef-walnut.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Qatayef'">
                 <div class="item-details">
                     <div class="item-name-ar">قطايف بالجوز</div>
                     <div class="item-name-en">Premium Walnut Qatayef</div>
@@ -1075,7 +1081,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/taj-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Taj+El+Malek'">
+                <img src="taj-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Taj+El+Malek'">
                 <div class="item-details">
                     <div class="item-name-ar">تاج الملك بالقشطة</div>
                     <div class="item-name-en">Premium Cream Taj El Malek Kunafa</div>
@@ -1092,7 +1098,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/wardat-kunafa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Wardat'">
+                <img src="imageswardat-kunafa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Wardat'">
                 <div class="item-details">
                     <div class="item-name-ar">وردات كنافة بالقشطة</div>
                     <div class="item-name-en">Premium Cream Kunafa Wardat</div>
@@ -1109,7 +1115,7 @@
 
             <div class="item-card">
                 <span class="item-price">£2.00 <small style="font-size: 12px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/qatayef-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Qatayef'">
+                <img src="qatayef-cream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Qatayef'">
                 <div class="item-details">
                     <div class="item-name-ar">قطايف بالقشطة</div>
                     <div class="item-name-en">Premium Cream Qatayef</div>
@@ -1182,7 +1188,7 @@
 
             <div class="item-card">
                 <span class="item-price">£7.00 <small style="font-size: 11px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/large-pistachio-baklava.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Large+Baklava'">
+                <img src="large-pistachio-baklava.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Large+Baklava'">
                 <div class="item-details">
                     <div class="item-name-ar">بقلاوة بالفستق (قطعة كبيرة)</div>
                     <div class="item-name-en">Premium Pistachio Large Baklava</div>
@@ -1199,7 +1205,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00 <small style="font-size: 11px; font-weight: 400;">(5 Pcs)</small></span>
-                <img src="images/almond-harisa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Almond+Harisa'">
+                <img src="almond-harisa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Almond+Harisa'">
                 <div class="item-details">
                     <div class="item-name-ar">هريسة باللوز</div>
                     <div class="item-name-en">Premium Almond Harisa</div>
@@ -1216,7 +1222,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.00 <small style="font-size: 11px; font-weight: 400;">(4 Pcs)</small></span>
-                <img src="images/pistachio-harisa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Pistachio+Harisa'">
+                <img src="imagespistachio-harisa.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Pistachio+Harisa'">
                 <div class="item-details">
                     <div class="item-name-ar">هريسة بالفستق</div>
                     <div class="item-name-en">Premium Pistachio Harisa</div>
@@ -1250,7 +1256,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.00 <small style="font-size: 11px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/warbat-pistachio.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Warbat'">
+                <img src="warbat-pistachio.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Warbat'">
                 <div class="item-details">
                     <div class="item-name-ar">وربات بالفستق</div>
                     <div class="item-name-en">Premium Pistachio Warbat</div>
@@ -1379,7 +1385,7 @@
         <div class="item-grid">
             <div class="item-card">
                 <span class="item-price">£4.00 <small style="font-size: 11px; font-weight: 400;">(1 Slice)</small></span>
-                <img src="images/cassata-roll.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cassata+Roll'">
+                <img src="cassata-roll.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cassata+Roll'">
                 <div class="item-details">
                     <div class="item-name-ar">كاسيتا (رول كيك بالبوظة)</div>
                     <div class="item-name-en">Premium Sponge Ice Cream Roll</div>
@@ -1396,7 +1402,7 @@
 
             <div class="item-card">
                 <span class="item-price">£5.50 <small style="font-size: 11px; font-weight: 400;">(1 Pc)</small></span>
-                <img src="images/arabic-icecream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Arabic+Ice+Cream'">
+                <img src="arabic-icecream.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Arabic+Ice+Cream'">
                 <div class="item-details">
                     <div class="item-name-ar">بوظة عربي بالقشطة والفستق</div>
                     <div class="item-name-en">Premium Cream Arabic Ice Cream</div>
@@ -1700,7 +1706,7 @@
         <div class="item-grid">
             <div class="item-card">
                 <span class="item-price">£5.50</span>
-                <img src="images/blueberry-matcha.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Blueberry+Matcha'">
+                <img src="blueberry-matcha.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Blueberry+Matcha'">
                 <div class="item-details">
                     <div class="item-name-ar">ماتشا بالتوت الأزرق (حار/بارد)</div>
                     <div class="item-name-en">Premium Blueberry Matcha</div>
@@ -1768,7 +1774,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/arabic-coffee.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Arabic+Coffee'">
+                <img src="arabic-coffee.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Arabic+Coffee'">
                 <div class="item-details">
                     <div class="item-name-ar">قهوة عربية بالهيل</div>
                     <div class="item-name-en">Premium Cardamom Arabic Coffee</div>
@@ -1785,7 +1791,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/espresso.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Espresso'">
+                <img src="espresso.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Espresso'">
                 <div class="item-details">
                     <div class="item-name-ar">إسبريسو غني</div>
                     <div class="item-name-en">Premium Roasted Espresso</div>
@@ -1802,7 +1808,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.50</span>
-                <img src="images/americano.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Americano'">
+                <img src="americano.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Americano'">
                 <div class="item-details">
                     <div class="item-name-ar">أمريكانو كلاسيك</div>
                     <div class="item-name-en">Premium Roasted Americano</div>
@@ -1819,7 +1825,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.50</span>
-                <img src="images/flat-white.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Flat+White'">
+                <img src="flat-white.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Flat+White'">
                 <div class="item-details">
                     <div class="item-name-ar">فلات وايت</div>
                     <div class="item-name-en">Premium Milk Flat White</div>
@@ -1836,7 +1842,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.50</span>
-                <img src="images/latte.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Latte'">
+                <img src="latte.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Latte'">
                 <div class="item-details">
                     <div class="item-name-ar">لاتيه فاخر</div>
                     <div class="item-name-en">Premium Milk Latte</div>
@@ -1853,7 +1859,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.50</span>
-                <img src="images/cappuccino.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cappuccino'">
+                <img src="cappuccino.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cappuccino'">
                 <div class="item-details">
                     <div class="item-name-ar">كابوتشينو كلاسيك</div>
                     <div class="item-name-en">Premium Milk Cappuccino</div>
@@ -1870,7 +1876,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.50</span>
-                <img src="images/macchiato.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Macchiato'">
+                <img src="macchiato.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Macchiato'">
                 <div class="item-details">
                     <div class="item-name-ar">ماكياتو</div>
                     <div class="item-name-en">Premium Milk Macchiato</div>
@@ -1887,7 +1893,7 @@
 
             <div class="item-card">
                 <span class="item-price">£4.50</span>
-                <img src="images/cortado.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cortado'">
+                <img src="cortado.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Cortado'">
                 <div class="item-details">
                     <div class="item-name-ar">كورتادو</div>
                     <div class="item-name-en">Premium Milk Cortado</div>
@@ -1904,7 +1910,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/black-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Black+Tea'">
+                <img src="black-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Black+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي أسود كلاسيك</div>
                     <div class="item-name-en">Premium Classic Black Tea</div>
@@ -1921,7 +1927,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/green-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Green+Tea'">
+                <img src="green-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Green+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي أخضر نقي</div>
                     <div class="item-name-en">Premium Classic Green Tea</div>
@@ -1938,7 +1944,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/mint-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Mint+Tea'">
+                <img src="mint-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Mint+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي بالنعناع الطازج</div>
                     <div class="item-name-en">Premium Fresh Mint Tea</div>
@@ -1955,7 +1961,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/karak-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Karak+Tea'">
+                <img src="karak-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Karak+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي كرك متبل</div>
                     <div class="item-name-en">Premium Spiced Karak Tea</div>
@@ -1972,7 +1978,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/berry-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Berry+Tea'">
+                <img src="berry-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Berry+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي التوت المشكل</div>
                     <div class="item-name-en">Premium Mixed Berry Tea</div>
@@ -1989,7 +1995,7 @@
 
             <div class="item-card">
                 <span class="item-price">£3.00</span>
-                <img src="images/iced-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Iced+Tea'">
+                <img src="iced-tea.webp" class="item-image" loading="lazy" onerror="this.src='https://via.placeholder.com/300x220/141414/C5A059?text=Iced+Tea'">
                 <div class="item-details">
                     <div class="item-name-ar">شاي مثلج (آيس تي)</div>
                     <div class="item-name-en">Premium Classic Iced Tea</div>
